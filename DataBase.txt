@@ -1,0 +1,30 @@
+Pudge;2000;75;14;5
+Invoker;1200;95;20;10
+Gandalf;1500;130;10;8
+Darth Vader;1800;110;25;6
+Juggernaut;1600;105;34;4
+Shrek;2500;80;12;1
+Crystal Maiden;1000;65;15;3
+Harry Potter;900;85;30;7
+Geralt of Rivia;1700;100;28;5
+Anti-Mage;1300;90;40;7
+Santa Claus;2200;50;5;2
+Naruto;1400;120;45;6
+Saitama;3000;500;50;1
+Goku;1800;150;55;7
+Spider-Man;1100;95;60;6
+Batman;1400;105;45;5
+Superman;2400;140;35;4
+Wolverine;1900;115;50;5
+Deadpool;1500;125;48;6
+Thanos;2600;160;30;8
+Doctor Strange;1000;140;25;9
+Iron Man;1600;135;40;7
+Captain America;1700;100;38;5
+Thor;2100;155;32;6
+Black Widow;950;110;55;7
+Kratos;2000;145;35;6
+Master Chief;1800;120;42;6
+Lara Croft;1050;100;52;6
+Solid Snake;1300;115;47;7
+Pikachu;800;90;65;4
