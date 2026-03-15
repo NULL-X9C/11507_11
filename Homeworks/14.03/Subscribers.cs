@@ -7,22 +7,15 @@ public interface ISubscriber
     public void OnAlarm(string mes, DateTime dt);
 }
 
-public class Siren 
+public class Siren : ISubscriber
 {
-    // private string mes;
-    //
-    // public Siren(string mes)
-    // {
-    //     this.mes = mes;
-    // }
-
     public void OnAlarm(string mes, DateTime dt)
     {
         Console.WriteLine("ВКЛЮЧЕНА СИРЕНА: {0}", mes);
     }
 }
 
-public class Logger
+public class Logger : ISubscriber
 {
     public ObservableCollection<string> Logs {get; private set;}
 

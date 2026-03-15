@@ -21,7 +21,7 @@ public class SensorProcessor
         sensor.Trigger("проверка связи");
         
         var logFilt = new LogFilter("Критично");
-        var logAnalazer = new LogAnalazer<string>();
-        logAnalazer.AnalazeLog(logger.Logs, logFilt.Filter);
+        var logAnalyzer = new LogAnalyzer<string>();
+        logAnalyzer.AnalyzeLog(logger.Logs, logFilt.Filter);
     }
 }

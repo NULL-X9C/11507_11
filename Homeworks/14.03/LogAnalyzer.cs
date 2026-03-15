@@ -1,8 +1,8 @@
 namespace DotaParser52.Homeworks._14._03;
 
-public class LogAnalazer<T>
+public class LogAnalyzer<T>
 {
-    public void AnalazeLog(IEnumerable<T> log, Predicate<T> filter)
+    public void AnalyzeLog(IEnumerable<T> log, Predicate<T> filter)
     {
         bool isFound = false;
         foreach (var logItem in log)

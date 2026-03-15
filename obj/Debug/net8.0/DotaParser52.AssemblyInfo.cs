@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DotaParser52")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5826d60c15a3c5115d91800c3d475f274284749f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+724394673b1c7b759609b6ef26ba0cb4470e9057")]
 [assembly: System.Reflection.AssemblyProductAttribute("DotaParser52")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DotaParser52")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
