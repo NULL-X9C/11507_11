@@ -6,7 +6,7 @@ using System.IO;
 
 public class Reader
 {
-    public string FileName  = @"C:\Users\Пользователь\RiderProjects\DotaParser52\DotaParser52\DataBase.txt";
+    public string FileName  = @"C:\Users\Пользователь\RiderProjects\DotaParser52\DotaParser52\Homeworks\7.03\DataBase.txt";
     public List<string[]> Data = new List<string[]>();
     public void Read()
     {
