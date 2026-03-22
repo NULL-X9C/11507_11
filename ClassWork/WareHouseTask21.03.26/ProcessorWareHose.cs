@@ -13,5 +13,7 @@ public class ProcessorWareHose
         addProducts.AddProduct();
         var product = fileManager.ReadFile("товары");
         addProducts.PrintProducts(product);
+        addProducts.RemoveProduct(product);
+        addProducts.PrintProducts(product);
     }
 }
