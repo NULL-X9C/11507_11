@@ -16,8 +16,8 @@ public class ProductAdder
             {
                 name = Console.ReadLine();
                 if (string.IsNullOrWhiteSpace(name)) Console.WriteLine("Enter Product Name:");
-                break;
-
+                else 
+                    break;
             }
 
             Console.WriteLine("Enter Product Price:");
@@ -25,7 +25,10 @@ public class ProductAdder
             while (true)
             {
                 if (!decimal.TryParse(Console.ReadLine(), out price)) Console.WriteLine("Enter Product Price:");
-                break;
+                else
+                {
+                    break;
+                }
             }
 
             Console.WriteLine("Enter Product Count:");
@@ -33,7 +36,8 @@ public class ProductAdder
             while (true)
             {
                 if (!int.TryParse(Console.ReadLine(), out count)) Console.WriteLine("Enter Product Count:");
-                break;
+                else
+                  break;
             }
             products.Add(new Product(){Name = name, Price = price, Count = count});
             Console.WriteLine("Do you wanna add another product? Y/N, def: Y");
@@ -42,6 +46,23 @@ public class ProductAdder
         } while (stop is false);
         var fileManager = new FileManager();
         fileManager.SaveFile("товары", products);
+    }
+
+    public void RemoveProduct(List<Product> products)
+    {
+        Console.WriteLine("Enter the name of the product to be removed:");
+        string? name;
+        while (true)
+        {
+            name = Console.ReadLine()?.ToLower();
+            if (string.IsNullOrWhiteSpace(name)) Console.WriteLine("Enter Product Name:");
+            else 
+                break;
+        }
+        products.RemoveAll(product => product.Name.ToLower() == name);
+        var fileManager = new FileManager();
+        fileManager.SaveFile("товары", products);
+        
     }
 
     public void PrintProducts(List<Product> products)
