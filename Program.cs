@@ -1,11 +1,18 @@
 ﻿using DotaParser52;
 using DotaParser52.Homeworks._14._03;
 using DotaParser52.ClassWork;
-
-// var FiltProc = new DotaParserProcessor();
+using DotaParser52.Homeworks._4._04.CoffeeMachine;
+using DotaParser52.Homeworks._4._04.CoffeeMachine.Animation;
+using DotaParser52.Homeworks._11._04;
+// var FiltProc = new DotaParserProcessor();   7.03
 //
-// var sensorProc = new SensorProcessor();
+// var sensorProc = new SensorProcessor();     14.03
 // sensorProc.Process();
 
-var WareHouseProc = new ProcessorWareHose();
-WareHouseProc.StartProcess();
+//var WareHouseProc = new ProcessorWareHose();    ClassWork 21.03
+//
+//WareHouseProc.StartProcess();
+
+var bigDataProc = new BigDataProcessor();
+bigDataProc.Run();
+
