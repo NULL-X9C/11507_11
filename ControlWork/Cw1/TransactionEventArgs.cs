@@ -1,4 +1,4 @@
-namespace DotaParser52.Homeworks;
+namespace DotaParser52.ControlWork.Cw1;
 
 public class TransactionEventArgs : EventArgs
 {
