@@ -1,6 +1,6 @@
 namespace CwSolves;
 
-public class kkkk
+public class kkk
 {
     
 }
