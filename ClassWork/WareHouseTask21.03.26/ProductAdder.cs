@@ -59,7 +59,7 @@ public class ProductAdder
             else 
                 break;
         }
-        products.RemoveAll(product => product.Name.ToLower() == name);
+        products.RemoveAll(product => product.Name?.ToLower() == name);
         var fileManager = new FileManager();
         fileManager.SaveFile("товары", products);
         
