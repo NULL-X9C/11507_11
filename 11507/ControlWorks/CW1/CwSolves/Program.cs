@@ -1,3 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using CwSolves;
 
-Console.WriteLine("Hello, World!  ");
+var procc = new ControlWorkProcessor();
+procc.RunTask1();
+procc.RunTask2();
