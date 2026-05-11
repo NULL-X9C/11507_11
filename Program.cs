@@ -13,6 +13,6 @@ using DotaParser52.Homeworks._11._04;
 //
 //WareHouseProc.StartProcess();
 
-var bigDataProc = new BigDataProcessor();
-bigDataProc.Run();
-
+// var bigDataProc = new BigDataProcessor(); 11/04
+// bigDataProc.Run();
+Console.WriteLine("Hello, World!");

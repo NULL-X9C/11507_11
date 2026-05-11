@@ -22,7 +22,7 @@ public static class LoadingAnimations
     /// <summary>
     /// Запускает кофейную анимацию загрузки
     /// </summary>
-    public static void PlayCoffeeLoading(int durationMs = 3000)
+    public static void PlayCoffeeLoading(int durationMs = 4000)
     {
         PlayAnimation(CoffeeFrames, durationMs, frameDelayMs: 150);
     }
@@ -40,28 +40,24 @@ public static class LoadingAnimations
     {
         int startTop = Console.CursorTop;
         int iterations = totalDelayMs / frameDelayMs;
-        int maxLines = frames[0].Split('\n').Length;
-        int maxLen = 20; // Ширина области анимации (подобрана под кадры)
+        int maxLines = frames.Max(f => f.Split('\n').Length); // Динамическая высота
 
         for (int i = 0; i < iterations; i++)
         {
-            // Возвращаем курсор в начало области анимации
-            Console.SetCursorPosition(0, startTop);
-            
-            // Очищаем область от предыдущего кадра (защита от артефактов)
+            string frame = frames[i % frames.Length];
+            string[] lines = frame.Split('\n');
+        
+            // Рисуем кадр построчно, не сдвигая курсор лишним
             for (int line = 0; line < maxLines; line++)
             {
-                Console.WriteLine(new string(' ', maxLen));
+                Console.SetCursorPosition(0, startTop + line);
+                Console.Write(line < lines.Length ? lines[line].PadRight(25) : new string(' ', 25));
             }
-            Console.SetCursorPosition(0, startTop);
-
-            // Рисуем текущий кадр
-            Console.Write(frames[i % frames.Length]);
+        
             Thread.Sleep(frameDelayMs);
         }
 
-        // Сдвигаем курсор под анимацию, чтобы следующий вывод не наложился
-        Console.SetCursorPosition(0, startTop + maxLines);
-        Console.WriteLine();
+        // Корректный выход: переводим курсор ПОСЛЕ области анимации
+        Console.SetCursorPosition(0, startTop + maxLines + 1);
     }
 }
