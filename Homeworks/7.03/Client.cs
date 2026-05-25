@@ -1,6 +1,4 @@
-using System.Diagnostics;
-
-namespace DotaParser52;
+namespace DotaParser52.Homeworks._7._03;
 
 public class Client
 {
@@ -34,7 +32,7 @@ public class Client
         {
             "=" => 0,
             ">" => 1,
-            _ => throw new Exception("нормальные данны введите ")
+            _ => throw new Exception("некорректные данные ")
         };
         return (parametr, parametr1, parametr2);
     }

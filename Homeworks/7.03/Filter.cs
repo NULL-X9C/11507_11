@@ -1,4 +1,4 @@
-namespace DotaParser52;
+namespace DotaParser52.Homeworks._7._03;
 
 public class Filter
 {
@@ -8,26 +8,26 @@ public class Filter
    {
       _data = data;
    }
-   public void Filtering( (int characteristic, int value, int equalOrSuperior) filter)
+   public IEnumerable<string> Filtering( (int characteristic, int value, int equalOrSuperior) filter)
    {
       if (filter.equalOrSuperior == 0)
       {
-         FilterEqualsValue(filter.value, filter.characteristic);
+       return  FilterEqualsValue(filter.value, filter.characteristic);
       }
       else
       {
-         FilterSuperiorValue(filter.value, filter.characteristic);
+         return FilterSuperiorValue(filter.value, filter.characteristic);
       }
    }
 
-   public void FilterEqualsValue(int value, int Characteristic)
+   public IEnumerable<string> FilterEqualsValue(int value, int Characteristic)
    {
       bool found = false;
       foreach (string[] line in _data)
       {
          if (int.Parse(line[Characteristic]) == value)
          {
-            Console.WriteLine("{0}, {1}",  line[0], line[Characteristic] );
+            yield return $"{line[0]}, {line[Characteristic]}";
             found = true;
          }
          
@@ -35,18 +35,18 @@ public class Filter
       if(!found)
          Console.WriteLine(" ничео нее найдено");
    }
-   public void FilterSuperiorValue(int value, int Characteristic)
+   public IEnumerable<string> FilterSuperiorValue(int value, int Characteristic)
    {
       bool found = false;
       foreach (string[] line in _data)
       {
          if (int.Parse(line[Characteristic]) > value)
          {
-            Console.WriteLine("{0}, {1}",  line[0], line[Characteristic] );
+            yield return $"{line[0]}, {line[Characteristic]}";
             found = true;
          }
       }
       if (!found)
-         Console.WriteLine(" ничео нее найдено");
+         Console.WriteLine(" ничего нее найдено");
    }
 }

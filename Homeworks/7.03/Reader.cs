@@ -1,17 +1,13 @@
-namespace DotaParser52;
-
-using System;
-using System.Collections.Generic;
-using System.IO;
+namespace DotaParser52.Homeworks._7._03;
 
 public class Reader
 {
-    public string FileName  = @"C:\Users\Пользователь\RiderProjects\DotaParser52\DotaParser52\Homeworks\7.03\DataBase.txt";
+    public readonly string FileName  = @"C:\Users\Пользователь\RiderProjects\DotaParser52\DotaParser52\Homeworks\7.03\DataBase.txt";
     public List<string[]> Data = new List<string[]>();
     public void Read()
     {
-        string[] Lines = File.ReadAllLines(FileName);
-        foreach (string line in Lines)
+        string[] lines = File.ReadAllLines(FileName);
+        foreach (string line in lines)
         {
             string[] values = line.Split(';');
             Data.Add(values);
