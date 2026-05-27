@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Folder Include="Homeworks\14.03\Warehouse security system\" />
       <Folder Include="Homeworks\23.05\" />
       <Folder Include="Homeworks\4.04\CoffeeMachine\Validation\DomainValidaton\" />
     </ItemGroup>
