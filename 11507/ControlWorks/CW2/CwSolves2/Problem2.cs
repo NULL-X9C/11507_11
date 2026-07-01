@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 public class MyTaskDispatcher
 {
     private readonly Semaphore Sem = new Semaphore(5, 5);
-    private readonly List<Action> Tasks = new List<Action>();
+    public readonly List<Action> Tasks = new List<Action>();
 
     public void Fill()
     {
@@ -34,6 +34,7 @@ public class MyTaskDispatcher
                 Sem.WaitOne();
                 try
                 {
+                    Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
                     action();
                 }
                 finally
