@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CwSolves2", "ControlWorks\C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SobesSolwesTasks", "SobesSolwesTasks\SobesSolwesTasks.csproj", "{10D04259-656B-4762-876B-55FD38963E03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork", "Homeworks and classwoks\HomeWork\HomeWork.csproj", "{CC295102-6895-459F-9330-4D0FF958ED2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{10D04259-656B-4762-876B-55FD38963E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10D04259-656B-4762-876B-55FD38963E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10D04259-656B-4762-876B-55FD38963E03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC295102-6895-459F-9330-4D0FF958ED2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC295102-6895-459F-9330-4D0FF958ED2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC295102-6895-459F-9330-4D0FF958ED2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC295102-6895-459F-9330-4D0FF958ED2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
