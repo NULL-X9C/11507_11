@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotaParser52", "DotaParser52\DotaParser52.csproj", "{E89211B2-121C-43D2-8570-26500BC71067}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CwSolves", "ControlWorks\CW1\CwSolves\CwSolves.csproj", "{1822D10E-C13F-4576-BA6D-B0C19165D743}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CwSolves2", "ControlWorks\CW2\CwSolves2\CwSolves2.csproj", "{DA4AF346-9E90-459A-A49C-3F3C8FD42AAB}"
@@ -14,10 +12,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E89211B2-121C-43D2-8570-26500BC71067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E89211B2-121C-43D2-8570-26500BC71067}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E89211B2-121C-43D2-8570-26500BC71067}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E89211B2-121C-43D2-8570-26500BC71067}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1822D10E-C13F-4576-BA6D-B0C19165D743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1822D10E-C13F-4576-BA6D-B0C19165D743}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1822D10E-C13F-4576-BA6D-B0C19165D743}.Release|Any CPU.ActiveCfg = Release|Any CPU
